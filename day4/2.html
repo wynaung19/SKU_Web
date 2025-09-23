@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>two</title>
+  </head>
+  <body>
+    <form action="#" method="get">
+      <label for="name">Name : </label>
+      <input type="text" name="name" id="name" maxlength="10" /><br />
+      <br />
+      <label for="password">Password : </label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        maxlength="8"
+      /><br />
+      <br />
+      자소서 :
+      <textarea cols="20" name="intro" rows="5"></textarea>
+      <br />
+      <br />
+      <label for="">Country</label>
+      <input type="text" list="coun" />
+      <datalist id="coun">
+        <option value="Myanmar"></option>
+        <option value="Korea"></option>
+        <option value="Canada"></option>
+      </datalist>
+      <br />
+      <br />
+      <label for="">Place</label>
+      <input type="text" list="place" />
+      <datalist id="place">
+        <option value="Mountain"></option>
+        <option value="Beach"></option>
+        <option value="Forest"></option>
+      </datalist>
+      <br />
+      검색: <input type="text" size="10" value="" />
+      <input type="button" value="Q1" />
+      <button type="button">Q2</button><br />
+      submit 버튼 : <input type="submit" value="전송1" />
+      <button type="submit">전송2</button><br />
+      reset 버튼 : <input type="reset" value="리셋1" />
+      <button type="reset">리셋2</button><br />
+      <br />
+      <div>
+        <label for="">CHECK</label> -
+        <input type="checkbox" name="c" value="1" /> 1
+        <input type="checkbox" name="c" value="2" /> 2
+        <input type="checkbox" name="c" value="3" /> 3
+      </div>
+      <br />
+      <div>
+        <label for="">Radio : </label>
+        <input type="radio" name="r" value="1" /> 1
+        <input type="radio" name="r" value="2" /> 2
+        <input type="radio" name="r" value="3" /> 3
+      </div>
+      <div>
+        <input
+          type="color"
+          name="col"
+          value="#00FFFF"
+          onchange="document.body.style.color = this.value"
+        />
+      </div>
+      <div>
+        지속시간 (0.0~10.0시간) :
+        <input type="number" min="0.0" max="10.0" step="0.5" /><br /><br />
+        온도 설정 :10&deg;
+        <input type="range" min="10" max="30" list="temperatures" />30&deg;
+        <datalist id="temperatures">
+          <option value="12" label="Low"></option>
+          <option value="20" label="Medium"></option>
+          <option value="28" label="High"></option>
+        </datalist>
+      </div>
+      <div>
+        <pre>
+month : <input type="month" value="2016-09"><br>
+week : <input type="week" value="2016-W36"><br>
+data : <input type="date" value="2016-09-01"><br>
+time : <input type="time" value="21:30"><br>
+local: <input type="datetime-local"
+value="2016-09-01T21:30:10.32"><br>
+</pre>
+      </div>
+      <table>
+        <tr>
+          <td>생일</td>
+          <td><input type="date" value="2000-05-20" /></td>
+        </tr>
+        <tr>
+          <td>생일파티시간</td>
+          <td><input type="time" /></td>
+        </tr>
+        <tr>
+          <td>생일파티장소</td>
+          <td><input type="text" /></td>
+        </tr>
+      </table>
+      <fieldset>
+        <legend>회원정보</legend>
+        이메일 : <input type="email" /><br />
+        홈페이지 : <input type="url" /><br />
+        전화번호 : <input type="tel" />
+      </fieldset>
+      <small>질문 : Tel. 010 -111 -1111</small>
+      <br />
+      <input type="submit" value="Login" />
+    </form>
+  </body>
+</html>
