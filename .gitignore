@@ -1,0 +1,13 @@
+/img
+/vid
+/audio
+
+.env
+
+*.mp4
+*.mkv
+*.png
+*.jpg
+*.jpeg
+*.mp3
+*.ogg
