@@ -1,40 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Shadow</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <style>
       div {
-        font-size: 40px;
+        border: 2px solid yellowgreen;
+        color: blue;
+        background: aliceblue;
       }
-      .red {
-        text-shadow: 3px 3px red;
+      p {
+        padding: 0 10px;
       }
-      .blur {
-        text-shadow: 3px 3px 8px #555;
-      }
-      .glow {
-        text-shadow: 0 0 5px blue;
-      }
-      .threeD {
-        color: white;
-        text-shadow: 2px 2px 4px black;
-      }
-      .wordArt {
-        color: white;
-        text-shadow: 0px 0px 3px darkBlue;
-      }
-      .multi {
-        color: rgb(106, 253, 255);
-        text-shadow: 2px 2px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+      span {
+        border: 3px dotted red;
+        background: yellow;
+        height: 100px;
       }
     </style>
   </head>
   <body>
-    <div class="red">Lorem ipsum dolor sit.</div>
-    <div class="blur">Lorem ipsum dolor sit.</div>
-    <div class="glow">Lorem ipsum dolor sit.</div>
-    <div class="threeD">Lorem ipsum dolor sit.</div>
-    <div class="wordArt">Lorem ipsum dolor sit.</div>
-    <div class="multi">Lorem ipsum dolor sit.</div>
+    <div>
+      <p>NONE : <span style="display: none">TEXT HERE</span></p>
+    </div>
+    <hr />
+    <div>
+      <p>Inline : <span style="display: inline">INLINE</span></p>
+    </div>
+    <hr />
+    <div>
+      <p>Block : <span style="display: block">BLOCK</span></p>
+    </div>
+    <hr />
+    <div>
+      <p>
+        Inline-Block :
+        <span
+          style="display: inline-block; width: 200px; background: lightgreen"
+          >INLINE-BLOCK</span
+        >
+      </p>
+    </div>
   </body>
 </html>
