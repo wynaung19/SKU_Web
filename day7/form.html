@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input[type="text"] {
+        color: red;
+      }
+      input:hover,
+      textarea:hover {
+        background-color: lightblue;
+      }
+      input[type="text"]:focus,
+      input[type="email"]:focus {
+        font-size: 120%;
+      }
+      label {
+        display: block;
+        padding: 10px;
+      }
+      label span {
+        display: inline-block;
+        width: 80px;
+        text-align: right;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Contact <a href="https://waiyannaung.com/">ME</a></h3>
+    <hr />
+    <form action="">
+      <label for="name">
+        <span>Name : </span
+        ><input type="text" id="name" name="name" placeholder="WaiYanNaung" />
+      </label>
+      <label for="email">
+        <span>Email : </span
+        ><input type="email" id="email" name="email" placeholder="w@wyn.onl" />
+      </label>
+      <label for="message">
+        <span>Message : </span
+        ><textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Enter Message"
+        ></textarea>
+      </label>
+      <label for=""> <span> </span><button type="submit">Send</button> </label>
+    </form>
+  </body>
+</html>

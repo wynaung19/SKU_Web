@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+      td,
+      th {
+        text-align-last: left;
+        padding: 10px;
+        height: 20px;
+        width: 100px;
+      }
+      thead,
+      tfoot {
+        background-color: darkblue;
+        color: cyan;
+      }
+      tbody tr:nth-child(odd) {
+        background-color: rgb(231, 231, 231);
+      }
+      tbody tr:hover {
+        background-color: rgb(249, 210, 217);
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>HTML</th>
+          <th>CSS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>WaiYanNaung</td>
+          <td>90</td>
+          <td>80</td>
+        </tr>
+        <tr>
+          <td>AungAung</td>
+          <td>85</td>
+          <td>95</td>
+        </tr>
+        <tr>
+          <td>MgMg</td>
+          <td>70</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>SuSu</td>
+          <td>40</td>
+          <td>70</td>
+        </tr>
+        <tr>
+          <td>KhinKhin</td>
+          <td>60</td>
+          <td>30</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>TOTAL</td>
+          <td>345</td>
+          <td>275</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
