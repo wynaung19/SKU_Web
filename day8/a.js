@@ -91,12 +91,16 @@
 // console.log("52" / 200);
 // console.log("52" % 200);
 
-console.log(`52 == "52" : ${52 == "52"}`);
-console.log(`52 === "52" : ${52 === "52"}`);
-console.log();
-console.log(`0 == "" : ${0 == ""}`);
-console.log(`0 === "" : ${0 === ""}`);
-console.log(`0 == false : ${0 == false}`);
-console.log(`0 === false : ${0 === false}`);
-console.log(`null == undefined : ${null == undefined}`);
-console.log(`null === undefined : ${null === undefined}`);
+// console.log(`52 == "52" : ${52 == "52"}`);
+// console.log(`52 === "52" : ${52 === "52"}`);
+// console.log();
+// console.log(`0 == "" : ${0 == ""}`);
+// console.log(`0 === "" : ${0 === ""}`);
+// console.log(`0 == false : ${0 == false}`);
+// console.log(`0 === false : ${0 === false}`);
+// console.log(`null == undefined : ${null == undefined}`);
+// console.log(`null === undefined : ${null === undefined}`);
+
+const a = 10;
+a = 20;
+console.log(a);
