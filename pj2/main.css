@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap");
+:root {
+  --primary: #012;
+  --secondary: #d2d2d2;
+  --hover: #ffffff;
+  --text: white;
+  --font1: "Zalando Sans SemiExpanded", sans-serif;
+  --font1: "Roboto", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+body {
+  background: var(--primary);
+  color: var(--text);
+}
+section {
+  padding: 0 6vw;
+  margin-bottom: 150px;
+}
+section[id="contact"] {
+  margin-bottom: 50px;
+}
+h1:hover {
+  text-shadow: 0 0 8px var(--hover);
+}
+.wbtn {
+  outline: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  border: 2px solid var(--textMain);
+  background: transparent;
+  color: var(--textMain);
+  border-radius: 10px;
+  padding: 10px 15px;
+  letter-spacing: 3px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.wbtn::before {
+  position: absolute;
+  content: " ";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #05bfdb;
+  z-index: -1;
+  transition: 0.3s;
+}
+.wbtn:hover {
+  border-color: var(--textColor1);
+  color: var(--siteColor);
+}
+.wbtn:hover:before {
+  width: 100%;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 10px 6vw;
+  background-color: #00112299;
+  box-shadow: 0 0 10px var(--primary);
+  z-index: 999999;
+}
+nav img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--secondary);
+}
+
+nav img:hover {
+  border-color: var(--hover);
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: var(--text);
+  margin-left: 40px;
+  position: relative;
+  font-size: 1.2em;
+}
+
+nav a::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background: var(--hover);
+  transition: all 0.5s;
+  border-radius: 2px;
+}
+nav a:hover:before {
+  width: 100%;
+}
+
+#home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#home img {
+  height: 70vh;
+  margin-top: calc(30vh - 70px);
+}
+
+#home h1 {
+  font-size: 4vw;
+  font-family: var(--font1);
+}
+
+#home h2 {
+  font-size: 2.5vw;
+  margin: 20px 0;
+  color: var(--hover);
+  letter-spacing: 2px;
+}
+#home p {
+  margin: 20px 0;
+  font-size: 1.2em;
+  color: var(--secondary);
+}
+
+#about h1 {
+  font-size: 3vw;
+  font-family: var(--font1);
+  margin-bottom: 100px;
+}
+
+#about .con {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+#about p {
+  font-size: 1.2em;
+  color: var(--secondary);
+  line-height: 1.9em;
+  word-spacing: 1px;
+}
+
+#about img {
+  width: 300px;
+  border-radius: 10px;
+  border: 2px solid var(--secondary);
+}
+
+#about p {
+  min-width: 70%;
+  font-size: 1.4rem;
+  text-align: justify;
+}
+
+#about img:hover {
+  box-shadow: 0 0 15px var(--hover);
+}
+#projects h1 {
+  font-size: 3vw;
+  font-family: var(--font1);
+  margin-bottom: 50px;
+}
+
+#projects .con {
+  padding: 0 6vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin: 0 auto;
+}
+
+#projects .card {
+  background: var(--secondary);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 30%;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#projects .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 253, 253, 0.459);
+}
+
+#projects .card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+#projects .card h3 {
+  margin: 15px;
+  font-size: 1.2rem;
+  color: var(--primary);
+}
+
+#projects .card p {
+  margin: 0 15px 20px;
+  color: var(--primary);
+  font-size: 1.1rem;
+}
+
+#contact h1 {
+  font-size: 3vw;
+  font-family: var(--font1);
+}
+
+#contact .contact {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+}
+#contact .contact a {
+  padding: 0;
+  width: 15vw;
+  height: 20vh;
+  margin-bottom: 40px;
+  line-height: 20vh;
+  text-align: center;
+  border: 3px solid var(--secondary);
+}
