@@ -90,6 +90,7 @@
 // console.log("52" * 200);
 // console.log("52" / 200);
 // console.log("52" % 200);
+// console.log("10" % 2);
 
 // console.log(`52 == "52" : ${52 == "52"}`);
 // console.log(`52 === "52" : ${52 === "52"}`);
@@ -101,6 +102,102 @@
 // console.log(`null == undefined : ${null == undefined}`);
 // console.log(`null === undefined : ${null === undefined}`);
 
-const a = 10;
-a = 20;
-console.log(a);
+// const a = 10;
+// a = 20;
+// console.log(a);
+
+// let date = new Date();
+// let hours = date.getHours();
+
+// if (date.getHours() < 12) {
+//   console.log("오전");
+// }
+// if (date.getHours() >= 12) {
+//   console.log("오후");
+// }
+
+// if (date.getHours() < 12) {
+//   console.log("오전");
+// } else {
+//   console.log("오후");
+// }
+
+// let date = new Date();
+// let hours = date.getHours();
+
+// if (hours < 11) {
+//   console.log("아침");
+// } else {
+//   if (hours < 15) {
+//     console.log("점심");
+//   } else {
+//     console.log("저녁");
+//   }
+// }
+
+// switch (date.getMonth() + 1) {
+//   case 12:
+//   case 1:
+//   case 2:
+//     console.log("겨울");
+//     break;
+//   case 3:
+//   case 4:
+//   case 5:
+//     console.log("봄");
+//     break;
+//   case 6:
+//   case 7:
+//   case 8:
+//     console.log("여름");
+//     break;
+//   case 9:
+//   case 10:
+//   case 11:
+//     console.log("가을");
+//     break;
+//   default:
+//     console.log("idk");
+//     break;
+// }
+
+// let test;
+// test = typeof test != "undefined" ? test : "초기화1";
+// console.log(test);
+// test = typeof test != "undefined" ? test : "초기화2";
+// console.log(test);
+
+let a = [1, 3, 324, 56, 4, 34, 234, 34, 3452, 34];
+// a[0] = 1;
+// console.log(a[0]);
+// console.log(a[1]);
+// console.log(a[2]);
+// console.log(a[3]);
+// console.log(a[4]);
+// let i = 0;
+// while (i < a.length) {
+//   //   console.log(i + " 번째 출력 : " + a[i]);
+//   console.log(`${i} 번째 출력 : ${a[i]}`);
+//   i++;
+// }
+
+// for (let i = 0; i < a.length; i++) {
+//   console.log(`${i} 번째 출력 : ${a[i]}`);
+// }
+
+// for (let i = a.length - 1; i >= 0; i--) {
+//   console.log(`${i} 번째 출력 : ${a[i]}`);
+// }
+
+for (let i in a) {
+  console.log(`${i} 번째 출력 : ${a[i]}`);
+}
+
+for (const i of a) {
+  console.log(i);
+}
+
+const myObject = { a: 1, b: 2, c: 3 };
+for (const key in myObject) {
+  console.log(`Key: ${key}, Value: ${myObject[key]}`);
+}
