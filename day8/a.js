@@ -258,8 +258,91 @@
 //   console.log(b);
 // }
 
-let a = 1;
-{
-  console.log(a);
-  let a = 2;
+// let a = 1;
+// {
+//   console.log(a);
+//   let a = 2;
+// }
+
+// let myfun = function () {
+//   console.log("WYN");
+//   console.log("WYN2");
+// };
+// myfun();
+// console.log(myfun);
+
+// function fun1() {
+//   console.log("WYN3");
+//   console.log("WYN3]4");
+// }
+// fun1();
+// console.log(fun1);
+
+// let f2 = () => {
+//   console.log("F2");
+// };
+// f2();
+// console.log(f2);
+
+// let f = (a) => a * 2;
+// console.log(f(2));
+
+// function sum(min, max) {
+//   let out = 0;
+//   for (let i = min; i <= max; i++) {
+//     out += i;
+//   }
+//   return out;
+// }
+// let sum = (min, max) => {
+//   let out = 0;
+//   for (let i = min; i <= max; i++) {
+//     out += i;
+//   }
+//   return out;
+// };
+
+// console.log(sum(1, 10));
+
+// let fun = (name = "", count = 1) => {
+//   console.log(`${name} : ${count}`);
+// };
+// fun("Apple", 3);
+// fun("Orange");
+
+//callback
+// function callTenTimes(c) {
+//   for (let i = 0; i < 10; i++) {
+//     c();
+//   }
+// }
+// callTenTimes(function () {
+//   console.log("WYN");
+// });
+
+// setTimeout(() => {
+//   console.log("waiyan");
+// }, 3000);
+
+// console.log("aaa");
+
+// setInterval(() => {
+//   console.log("wai");
+// }, 1000);
+// console.log("bbb");
+
+// fun = function () {
+//   console.log("1st");
+// };
+// fun = function () {
+//   console.log("1st2");
+// };
+
+function fun() {
+  console.log("2nd");
 }
+function fun() {
+  console.log("2nd2");
+}
+
+fun();
