@@ -167,7 +167,7 @@
 // test = typeof test != "undefined" ? test : "초기화2";
 // console.log(test);
 
-let a = [1, 3, 324, 56, 4, 34, 234, 34, 3452, 34];
+// let a = [1, 3, 324, 56, 4, 34, 234, 34, 3452, 34];
 // a[0] = 1;
 // console.log(a[0]);
 // console.log(a[1]);
@@ -189,15 +189,77 @@ let a = [1, 3, 324, 56, 4, 34, 234, 34, 3452, 34];
 //   console.log(`${i} 번째 출력 : ${a[i]}`);
 // }
 
-for (let i in a) {
-  console.log(`${i} 번째 출력 : ${a[i]}`);
-}
+// for (let i in a) {
+//   console.log(`${i} 번째 출력 : ${a[i]}`);
+// }
 
-for (const i of a) {
-  console.log(i);
-}
+// for (const i of a) {
+//   console.log(i);
+// }
 
-const myObject = { a: 1, b: 2, c: 3 };
-for (const key in myObject) {
-  console.log(`Key: ${key}, Value: ${myObject[key]}`);
+// const myObject = { a: 1, b: 2, c: 3 };
+// for (const key in myObject) {
+//   console.log(`Key: ${key}, Value: ${myObject[key]}`);
+// }
+
+// let out = "";
+// for (let i = 0; i < 10; i++) {
+//   for (let j = 0; j < i + 1; j++) {
+//     out += "*";
+//   }
+//   out += "\n";
+// }
+// console.log(out);
+// let out = "";
+// for (let i = 0; i < 10; i++) {
+//   for (let j = 0; j < -i + 10; j++) {
+//     out += " ";
+//   }
+//   for (let k = 0; k < i + 1; k++) {
+//     out += "*";
+//   }
+//   out += "\n";
+// }
+// console.log(out);
+
+// let i = 0;
+// let arr = [1, 4, 23, 2, 6, 8, 34];
+// let out;
+
+// while (true) {
+//   if (arr[i] % 2 == 0) {
+//     out = arr[i];
+//     break;
+//   }
+//   i++;
+// }
+// console.log(`Output : ${out}`);
+// let a; // global
+// {
+//   let a = 10; // remove let if global
+// }
+// console.log(a); // error, use var instead or declare as global
+
+// for (let i = 0; i < 10; i++) {
+//   console.log(i);
+// }
+// console.log(i); //error
+
+// let a = 1,
+//   b = 1;
+// {
+//   let a = 2;
+//   {
+//     let a = 3;
+//     console.log(a);
+//     console.log(b);
+//   }
+//   console.log(a);
+//   console.log(b);
+// }
+
+let a = 1;
+{
+  console.log(a);
+  let a = 2;
 }
